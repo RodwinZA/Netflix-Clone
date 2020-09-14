@@ -1,0 +1,406 @@
+/********************** RESETS **********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+}
+
+/********************** HERO SECTION **********************/
+
+header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bg {
+    background-image: url("../images/stranger-things-season-4-fe.jpg");
+    height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    height: 60px;
+    top: 0;
+    left: 10px;
+}
+
+.sign-in {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 7.5px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    padding-bottom: 20px;
+    font-size: 1.75rem;
+}
+
+.hero-text h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.15rem;
+    padding-bottom: 10px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up input {
+    padding: 15px 10px;
+
+}
+
+.sign-up button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-bottom: solid #3d3d3d 7px;
+}
+
+/********************** STORY CARDS SECTION **********************/
+
+.story-cards {
+    background-color: black;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+}
+
+.story-card-text h2 {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.story-card-text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.story-card-text h2,
+.story-card-text p {
+    color: #ffffff;
+}
+
+.story-card-img img {
+    width: 100%;
+}
+
+/********************** F.A.Q SECTION **********************/
+
+.faq-section {
+    background-color: black;
+    padding: 60px 0;
+}
+
+.faq-section h1 {
+    color: #ffffff;
+    font-size: 26px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.faq-section button {
+    border: none;
+    color: #ffffff;
+    background-color: #3d3d3d;
+    font-size: 24px;
+    margin-bottom: 1px;
+    padding: 20px 0 20px 20px;
+    outline: none;
+    text-align: left;
+    width: 100%;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #ffffff;
+    font-weight: bold;
+    size: 20px;
+    float: right;
+    margin-right: 20px;
+}
+
+.active:after {
+    content: '\2212';
+}
+
+.collapsible-content {
+    background-color: #3d3d3d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content p {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.faq-section .sign-up {
+    padding: 20px 20px 40px;
+}
+
+.faq-section p.cta {
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.faq-section .sign-up button {
+    background-color: red;
+    font-size: 1.15rem;
+    text-align: center;
+    justify-self: center;
+    padding: 10px 15px;
+    width: auto;
+}
+
+/********************** Footer SECTION **********************/
+
+
+footer {
+    background-color: black;
+    padding: 60px 40px;
+}
+.helpline p {
+    color: #7e7e7e;
+    padding-bottom: 30px;
+}
+
+.useful-links .left div{
+    display: flex;
+    flex-direction: column;
+}
+
+.left div a,
+.right div a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #7e7e7e;
+    padding-bottom: 20px;
+}
+
+.useful-links .right div {
+    display: flex;
+    flex-direction: column;
+}
+
+.useful-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.useful-links .left {
+    flex-basis: 50%;
+}
+
+.useful-links .right {
+    flex-basis: 50%;
+}
+
+
+footer p {
+    color: #7e7e7e;
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+
+@media screen and (min-width: 550px) {
+
+    .logo {
+        height: 80px;
+    }
+
+    .sign-in {
+        top: 30px;
+        padding: 7.5px 10px;
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        padding: 150px 40px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .story-card-text h2 {
+        font-size: 40px;
+    }
+
+    .story-card-text p {
+        font-size: 20px;
+    }
+    
+    .collapsible-section {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .faq-section h1 {
+        font-size: 36px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .faq-section .sign-up input {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .sign-up input {
+        margin: 0 60px;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 950px) {
+    .sign-up {
+        flex-direction: row;
+    }
+
+    .sign-up input {
+        flex-basis: 50%;
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .sign-up button {
+        margin-top: 0;
+        padding: 20px 15px;
+    }
+
+    .story-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .story-card-two {
+        flex-direction: row-reverse;
+    }
+
+    .story-card-text {
+        flex-basis: 50%;
+    }
+
+    .story-card-text h2 {
+        font-size: 50px;
+    }
+
+    .story-card-text p {
+        font-size: 26px;
+    }
+
+    .story-card-img {
+        flex-basis: 50%;
+    }
+
+    .collapsible-section {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .faq-section .sign-up input {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    .faq-section .sign-up button {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 20px 15px;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left div {
+        flex-basis: 100%;
+    }
+
+    .right {
+        display: flex;
+    }
+
+    .right div {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .left div a,
+    .right div a,
+    footer p {
+        font-size: 14px;
+    }
+}
